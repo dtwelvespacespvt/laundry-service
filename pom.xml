@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.stanzaliving</groupId>
+	<artifactId>laundry-service-parent</artifactId>
+	<packaging>pom</packaging>
+	<name>laundry-service-parent</name>
+	<version>1.0.0</version>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.6.6</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>17</java.version>
+	</properties>
+
+	<modules>
+		<module>secure</module>
+		<module>laundry-service</module>
+	</modules>
+	<dependencies>
+
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.boot</groupId>-->
+<!--			<artifactId>spring-boot-starter-security</artifactId>-->
+<!--			<version>2.6.6</version>-->
+<!--		</dependency>-->
+
+
+<!--		<dependency>-->
+<!--			<groupId>org.springframework</groupId>-->
+<!--			<artifactId>spring-web</artifactId>-->
+<!--			<version>5.3.22</version>-->
+<!--		</dependency>-->
+<!--		-->
+<!--		<dependency>-->
+<!--			<groupId>javax.validation</groupId>-->
+<!--			<artifactId>validation-api</artifactId>-->
+<!--			<version>2.0.1.Final</version>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.boot</groupId>-->
+<!--			<artifactId>spring-boot-starter-log4j2</artifactId>-->
+<!--			<version>2.6.6</version>-->
+<!--		</dependency>-->
+<!--&lt;!&ndash;		<dependency>&ndash;&gt;-->
+<!--&lt;!&ndash;			<groupId>org.jboss.logging</groupId>&ndash;&gt;-->
+<!--&lt;!&ndash;			<artifactId>jboss-logging</artifactId>&ndash;&gt;-->
+<!--&lt;!&ndash;			<version>3.5.0.Final</version>&ndash;&gt;-->
+<!--&lt;!&ndash;		</dependency>&ndash;&gt;-->
+<!--		<dependency>-->
+<!--			<groupId>org.apache.commons</groupId>-->
+<!--			<artifactId>commons-lang3</artifactId>-->
+<!--			<version>3.12.0</version>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>org.projectlombok</groupId>-->
+<!--			<artifactId>lombok</artifactId>-->
+<!--			<version>1.18.22</version>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>org.apache.commons</groupId>-->
+<!--			<artifactId>commons-collections4</artifactId>-->
+<!--			<version>4.0</version>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>com.fasterxml.jackson.core</groupId>-->
+<!--			<artifactId>jackson-core</artifactId>-->
+<!--			<version>2.13.3</version>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>com.google.guava</groupId>-->
+<!--			<artifactId>guava</artifactId>-->
+<!--			<version>20.0</version>-->
+<!--		</dependency>-->
+	</dependencies>
+
+	<profiles>
+		<profile>
+			<id>laundry-service</id>
+			<modules>
+				<module>laundry-service</module>
+			</modules>
+			<properties>
+				<sonar.skip>false</sonar.skip>
+			</properties>
+		</profile>
+	</profiles>
+
+</project>
+
