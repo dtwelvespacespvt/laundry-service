@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.stanzaliving</groupId>
-        <artifactId>utility-master-service-parent</artifactId>
+        <artifactId>laundry-service-parent</artifactId>
         <version>1.0.0</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
