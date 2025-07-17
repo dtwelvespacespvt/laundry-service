@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Log4j2
 @Validated
 @RestController
-@RequestMapping("bag")
+@RequestMapping("payment")
 @RequiredArgsConstructor
-public class BagController {
+public class PaymentController {
 }
